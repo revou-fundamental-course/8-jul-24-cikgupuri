@@ -1,0 +1,71 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Berat Badan Ideal</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Kalkulator Berat Badan Ideal</h1>
+    <style>
+        form {
+          background-color: #f0f0f0; /* Warna latar belakang form */
+          padding: 10px;
+          border: 1px solid #ccc;
+          width: 650px;
+          margin: 5px ;
+        }
+    
+        form label {
+          display: block;
+          margin-bottom: 5px;
+        }
+    </style>
+
+ <section class="text-box">
+    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang<br>
+        penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br>
+        Yuk, hitung sekarang di Kalkulator BMI</p>
+  </section>
+
+    <form id="form-hitung">          
+       <p> <label for="jenisKelamin"><b>Jenis Kelamin:</label></b></p>
+       <div>
+          <input type="radio" id="laki-laki" name="jenisKelamin" value="laki-laki">
+            <label for="laki-laki"><b>Laki-laki</b></label>
+        </div>
+        <div>
+            <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+            <label for="perempuan"><b>Perempuan</b></label><br>
+        </div>
+
+       <label for="beratBadan"><b>Berat Badan (kg):</b></label>
+        <input type="number" id="beratBadan" required><br>
+       <label for="tinggiBadan"><b>Tinggi Badan (cm):</b></label>
+        <input type="number" id="tinggiBadan" required><br>
+
+        <label for="usia"><b>Usia (tahun):</b></label>
+        <input type="number" id="usia" required><br>
+
+       <p> <button type="button" onclick="hitungBeratBadanIdeal()">Hitung BMI</button>
+        <button type="reset" onclick="hitungBeratBadanIdeal()">Reset</button></p><br>
+    </form>
+
+    <p><span class="textbox"><b>Keunggulan Fitur</b> </span></p>
+    
+<section class="text-box">
+    <p>1.Menghitung berat badan<br>
+        2.Menentukan kategori berat badan ideal atau Tidak<br>
+        3.Mempersiapkan Program Penurunan Berat Badan
+      </p>
+  </section>
+
+    <div id="hasil-hitung">
+        <p>Berat Badan Ideal Anda: <span id="berat-badan-ideal"></span> kg<br>
+        Keterangan: <span id="keterangan"></span></p>
+    </div></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
