@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+
+
+#textbox {
+    height: 100px; /* Ubah nilai ini sesuai kebutuhan */
+  }
+
+  
+#form-kalkulator {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#form-kalkulator label {
+    margin-bottom: 5px;
+}
+
+#form-kalkulator input,
+#form-kalkulator select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#hasil-hitung {
+    margin-top: 20px;
+}
